@@ -26,12 +26,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"incrementCount\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Counter.sol\":\"Counter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Counter.sol\":{\"keccak256\":\"0x358d8c5b8cfca16a98c7186e73ecf1ac64566dded2c83507934db100d21aeb66\",\"urls\":[\"bzz-raw://8bd1268aa0adf3103ae9270ec47797447a0efcb336336987e284f05a58e73fad\",\"dweb:/ipfs/QmcSADPWCs7guWmxzJyAL4uAZUpPECQs21bysc1sccDDae\"]}},\"version\":1}",
-  "bytecode": "0x6080604052600a600055348015601457600080fd5b5060a7806100236000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063a87d942c146037578063e5071b8e146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b600a6000540160008190555056fea265627a7a72315820be04a8840acc2ac9bf6aac27821838704a404fdf13cfcb808a76b6b4747b818a64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063a87d942c146037578063e5071b8e146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b600a6000540160008190555056fea265627a7a72315820be04a8840acc2ac9bf6aac27821838704a404fdf13cfcb808a76b6b4747b818a64736f6c63430005100032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"incrementCount\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Counter.sol\":\"Counter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Counter.sol\":{\"keccak256\":\"0x1306c72844807cf923e6c92ab3d9cf581e846c37a4db602707d5bc7d4b314f94\",\"urls\":[\"bzz-raw://8c18e53ffe702dbe5507d136e27d236e0a7daf1e2462818a6d17eb9c6863b4bf\",\"dweb:/ipfs/QmdSQMLYPjqa33ZCjdb5QDmmG4zvgXebaLXX6KV7hfyyGB\"]}},\"version\":1}",
+  "bytecode": "0x6080604052600c600055348015601457600080fd5b5060a7806100236000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c8063a87d942c146037578063e5071b8e146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b600a6000540160008190555056fea265627a7a723158207da81da60475aeb6807b7ee3dadcdce105b13d51c6c280273fae415b9f0d044164736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c8063a87d942c146037578063e5071b8e146053575b600080fd5b603d605b565b6040518082815260200191505060405180910390f35b60596064565b005b60008054905090565b600a6000540160008190555056fea265627a7a723158207da81da60475aeb6807b7ee3dadcdce105b13d51c6c280273fae415b9f0d044164736f6c63430005100032",
   "sourceMap": "69:203:0:-;;;108:2;92:18;;69:203;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:203:0;;;;;;;",
   "deployedSourceMap": "69:203:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:203:0;;;;;;;;;;;;;;;;;;;;;;;;117:79;;;:::i;:::-;;;;;;;;;;;;;;;;;;;202:68;;;:::i;:::-;;117:79;158:7;184:5;;177:12;;117:79;:::o;202:68::-;261:2;253:5;;:10;245:5;:18;;;;202:68::o",
-  "source": "// pragma solidity >=0.7.0 <0.9.0;\npragma solidity >=0.4.21 <0.7.0;\n\ncontract Counter {\n    uint256 count = 10;\n\n    function getCount() public view returns (uint256) {\n        return count;\n    }\n\n    function incrementCount() public {\n        count = count + 10;\n    }\n}\n",
+  "source": "// pragma solidity >=0.7.0 <0.9.0;\npragma solidity >=0.4.21 <0.7.0;\n\ncontract Counter {\n    uint256 count = 12;\n\n    function getCount() public view returns (uint256) {\n        return count;\n    }\n\n    function incrementCount() public {\n        count = count + 10;\n    }\n}\n\n// code with constructor\n// uint256 count;\n// constructor() public {\n//     count = 0;\n// }\n",
   "sourcePath": "/Users/anilrajthota/Documents/GitHub/Learn-Solidity/contracts/Counter.sol",
   "ast": {
     "absolutePath": "project:/contracts/Counter.sol",
@@ -95,7 +95,7 @@
             },
             "value": {
               "argumentTypes": null,
-              "hexValue": "3130",
+              "hexValue": "3132",
               "id": 3,
               "isConstant": false,
               "isLValue": false,
@@ -106,10 +106,10 @@
               "src": "108:2:0",
               "subdenomination": null,
               "typeDescriptions": {
-                "typeIdentifier": "t_rational_10_by_1",
-                "typeString": "int_const 10"
+                "typeIdentifier": "t_rational_12_by_1",
+                "typeString": "int_const 12"
               },
-              "value": "10"
+              "value": "12"
             },
             "visibility": "internal"
           },
@@ -313,7 +313,7 @@
         "src": "69:203:0"
       }
     ],
-    "src": "35:238:0"
+    "src": "35:331:0"
   },
   "legacyAST": {
     "attributes": {
@@ -382,15 +382,15 @@
               {
                 "attributes": {
                   "argumentTypes": null,
-                  "hexvalue": "3130",
+                  "hexvalue": "3132",
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
                   "lValueRequested": false,
                   "subdenomination": null,
                   "token": "number",
-                  "type": "int_const 10",
-                  "value": "10"
+                  "type": "int_const 12",
+                  "value": "12"
                 },
                 "id": 3,
                 "name": "Literal",
@@ -643,7 +643,7 @@
     ],
     "id": 24,
     "name": "SourceUnit",
-    "src": "35:238:0"
+    "src": "35:331:0"
   },
   "compiler": {
     "name": "solc",
@@ -653,12 +653,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xD945284e5469684Cf4118d730724f72e4AF6B93C",
-      "transactionHash": "0x2b1eb71e291b9d30058e21a71c1b79166f10443adffd97a0c5676cf7fbc55e17"
+      "address": "0x66d51d3f88CBb409DE5b177B9C788799CaBc9a76",
+      "transactionHash": "0x8c58afa1dd1ea138f0e203d1570819f268002be706a823bd21ce0df57bc0658c"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-31T22:05:55.675Z",
+  "updatedAt": "2022-02-03T21:02:50.483Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

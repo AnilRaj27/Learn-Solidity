@@ -2,7 +2,7 @@
 pragma solidity >=0.4.21 <0.7.0;
 
 contract Counter {
-    uint256 count = 10;
+    uint256 count = 12;
 
     function getCount() public view returns (uint256) {
         return count;
@@ -12,3 +12,9 @@ contract Counter {
         count = count + 10;
     }
 }
+
+// code with constructor
+// uint256 count;
+// constructor() public {
+//     count = 0;
+// }
