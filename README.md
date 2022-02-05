@@ -23,7 +23,7 @@ Repo for learning solidity basics
     ```
     address public myaddr = 0x2E7f715C21440e72013;
     ```
-4. purpose of [memory]("https://stackoverflow.com/a/33839164/8806485"), memory is not for int, its for strings, address.
+4. purpose of [memory](https://stackoverflow.com/a/33839164/8806485), memory is not for int, its for strings, address.
 5. In the mappings if unkonw index value is passed, the corresponding data types will be default.
     ```
     mapping(uint256 => string) public names;
