@@ -7,6 +7,7 @@ contract HotelRoom {
     }
     Status cs;
 
+    event Occupy(address _occupant, uint256 _val);
     address payable public owner;
 
     constructor() public {
@@ -14,18 +15,19 @@ contract HotelRoom {
         cs = Status.vacant;
     }
 
-    modifier checkPrice(uint256 _amt) {
+    modifier onlyWhileVacant() {
+        require(cs == Status.vacant, "Room is occupied");
+        _;
+    }
+
+    modifier costs(uint256 _amt) {
         require(msg.value >= _amt, "Funds not sufficient");
         _;
     }
 
-    modifier checkStatus() {
-        require(cs == Status.vacant, "Room is occupied");
-        -;
-    }
-
-    function book() payable checkPrice(2 ether) checkstatus{
+    function receive() external payable onlyWhileVacant costs(2 ether) {
         cs = Status.occupied;
         owner.transfer(msg.value);
+        emit Occupy(msg.sender, msg.value);
     }
 }
